@@ -377,6 +377,17 @@ GITHUB PAGES
 - buat repo di github
 - namanya gak boleh ngasal = namaGithubKita.github.io.
 - buat deksripsi
+- jangan centang readme
+- karena kita akan upload dari local 
+- git init
+- git remote add origin(nama default,boleh ubah) https://github.com/usernameKita/namarepokita (yg pakai .github.io.blabla)
+- git push -u origin master
+-git status
+- git add .
+- git commit -m "initial commmit"
+- git push
+- git status
+- akses di browser kita
 
 
 
