@@ -403,7 +403,30 @@ OKE
 
 
 
-
+=========================================
+MULTIPLE REMOTE
+: misal saya ngefork repo orang lain di github dan udah nyampe di repo kita trus kita cloning ke comp local
+- git remote = cek remote
+- git remote -v = lihat sekarang sync ke akun mana
+- agar uptodate kita bkin remote lagi
+- git remote add namaLain alamatRepoAsliNya
+- git remote
+- git remote -v
+- graph
+- posisi commit ketiga nya = git fetch repoAsli
+- kita edit
+- misal di repo asli orang tersebut edit juga, di commit
+- untuk melihat kita harus fetch dulu
+- git fetch namaRemoteAsliNya 
+- graph
+-nanti sandhika akan mendahului
+- kita merge, git merge namRemoteAsli/master
+- graph
+- nanti sudah sama dengan repo asli
+- repo si github belum sama dengan local
+- git push -u origin master
+-OKE
+=============================================
 
 
 
