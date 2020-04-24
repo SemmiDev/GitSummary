@@ -1,0 +1,379 @@
+INSTALL GIT
+- buka alamat git-scm
+- klik di gambar komputer karena telah menyesuaikan dengan sistim komputer kita
+- run / yes
+- next / simpan di terserah
+- next - text editor pilih aja sublime text
+- git from third / opsi yang kedua 
+- buka git bashnya
+
+nb = tanda `` jangan dicontek
+COMMAND DI GIT
+- buatlah sebuah folder baru untuk dijadikan repo kita!
+- masuk ke folder tersebut di bash nya lalu tulis `git init`
+- buat didalam folder tersebut sebuah html sederhana menggunakan sublime
+- `git status` = artinya belum ada yang commit
+- `git add .` = mengirim index.html yang kita buat tadi ke staging area
+- `git status` lagi untuk check berhasil kirim ke staging area
+- git config --global user.email"adadeh"
+- git config --global user.name "adadeh" `
+-  git status
+-  git commit -m "menambahkan file index.html"
+-  git status = akan muncul nothing to commit
+- 
+misal kita edit h1 nya jadi hello world
+buat style.css . untuk format h1 nya
+
+- git status
+- git add .
+- git commit -m "mengubah file index.htmld an menambahkan file style.css"
+
+coba hapus file style.css
+edit di htmlnya buat style langsung di html
+tambah penghubung javascript dan buat file script.js yang isina console.log ok
+
+- git status
+- git add.
+- git commit -m "melkukan perubahan.awowokwo.jelas dikit dong"
+-git status lagi
+
+- git log = melihat story / apa2 saja yang pernah dilakukan
+- git log -3 = tiga commit terakhir
+- git log -- style.css = unutk lihat hash dan  commit
+- cara mengembalikan file style.css misalnya ya, ketik ` git checkout ambil 5 digit hash nya -- style.css `
+- git status
+- git commit -m "mengembalikan style.css"
+- git status
+
+
+
+
+
+
+
+VIDEO KEDUA (BRANCH)
+- buat folder repo 2 , lalu git init
+- buat mahasiswa.html . editlah
+- git status , git add. , git commit "menambahkan file sekolah
+- git branch = unutk melihat semua branch
+- git branch guru = membuat branch guru
+- git branch staff = buat satu lagi
+- melihat graph
+ - git log --all --decorate --oneline -- graph = akan menampilkan grafis nya, commit
+ - cara menyingkat nya => alias graph = "git log --all --decorate -- oneline -- graph"
+- pindah antar branch = git checkout staff atau git branch guru
+- pindah ke editor sublime
+- buat staff.html edit isinya deanga staf use ul li
+- git status
+- git add .
+- git commit -m "menambah fitur staff"
+- buat guru.html
+- commit lagi
+- UNTUK MERGE
+- git checkout master
+- git merge staff
+- kita akan hapus yagn staff karena sudah di merge ke master
+- lihat dulu barnach mana aja yang sudah di merge dengan `git branch --merged`
+- menggunakan `git branch -d staff` untuk menghapus
+- untuk yakin delete branc yang belum di merge menggunakan `git branch -D staff`
+- 
+
+gabung 2 branch : 
+- direct path artinya langsung = fast forward
+- git checkout master 
+- git merge dosen
+- oke
+- graph
+- menghaspus bracnj = git branch -d dosen
+- three way merged
+- git checkout master
+- git merged staff
+ akan di direct ke editor, save aja
+ - esc:wq! = keluar dari vim dan save
+ - graph
+
+
+
+ 
+CONFLICT
+ -git init, buat file
+ - buat 2 branch
+ - branch a = edit
+ - branch b = edit ada juga bris  yg sama dengan branch 2 
+ - git checkout master
+ ATAU 
+ - branch 1 yg konflik dengan master, coba aja
+ - git merge branchA
+ - nanti ada konflik, resolve deh di editor
+ - yg warna biru yg berubah yg fi branch
+ - atas yg branc master
+ - hapus aja dan pilih2
+- jika selesai edit
+- git status
+- git add.
+- git commit -m "terserah"
+- graph
+- udah deh
+- hapus branch
+- git branch -d branchA
+-
+
+- kembali ke commit sebelumya = 
+- git log
+- back
+- git checkout 7digit hashnya
+- graph
+- git checkout master
+- graph
+- misal kita buat branch dari commit tadi = git branch test
+- git checkout test
+- grah, as you can see, head nya udah mengarah ke master
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| git --version = cek versi git di komputer
+| git init = menjadikan suatu folder yagn kita buat menjadi master
+| git add <file> = 
+| git status = cek yang blm di masukkan kek staging area
+| 
+
+
+
+
+# Daftar Perintah Git #
+
+## Perintah Lokal ##
+
+* Membuat repository baru
+```
+git init
+```
+
+* Menambahkan dari working ke staging
+```
+git add .
+```
+
+* Menyimpan perubahan ke local repo
+```
+git commit -m "keterangan commit"
+```
+
+## Perintah Remote ##
+
+* Mendaftarkan Remote Repository
+```
+git remote add <nama remote> <url remote>
+```
+
+Contoh :
+```
+git remote add github https://github.com/endymuhardin/belajar-git.git
+```
+
+* Mengambil remote repository yang sudah ada
+
+```
+git clone <url remote repository>
+```
+
+Contoh:
+
+```
+git clone git@github.com:endymuhardin/belajar-git.git
+
+
+yogi belajar git
+```
+
+* membuat ssh key gen
+```
+
+contoh :
+```
+$ ssh-keygen
+```
+
+* Menambahkan remote repository. Biasanya kita mendaftarkan remote repository utama yang dijadikan patokan. Ini disebut dengan istilah upstream repo.
+
+```
+git remote add endy git@github.com:endymuhardin/belajar-git.git
+```
+
+* Mengambil perubahan di remote repository
+
+```
+git pull endy master
+```
+
+
+
+
+
+
+
+
+
+
+
+GITHUB
+- melihat rinci : klik repo - insight = network
+- melihat commit = klik commit
+- membuat branch = klik branch pada tampilan repository dan klik new branch
+- cubo create new file = and commit, ok
+- kalau pindah ke master = nanti gk ada
+- commit lagi banyak2 agar namapak di network, di insigh
+- gabung ke master = klik compare and pull request, able to merge
+- isi comment dan pesan pull req nya
+- cerate pull  request
+- klik di pull req
+- jika setuju klik merg kalau gak jangan
+- lihat di master nanti sudah ada 
+-untuk menghapus branch yg telah dibuat klik = bagian 2 branch misallnya, klik delete icon
+- buat branch lagi
+- buat branch lagi, nanti agar ada conflick
+- pergi ke branch a = edit
+- pergi ke brach b = edit baris yg sa,a
+- merge satusatu, pergi ke master, pull dari branch a
+- setujui
+- pergi master
+- pull yg ke brach b
+- nanti ada conflict klik resolve
+- ada tanda kecild ari besa dari
+- edit aja
+- klik merge and confirm
+- compplete
+- danah apus branches nya
+
+
+- forking, duplikat dari repo orang lain beserta commit nya juga
+- kalau clone duplikat ke komputer kita
+- fork bsia langsung dengan cara buka file di repo orang itu dan kemudian edit
+- cara kedua klik di kanan atas tulisan fork
+- nanti akan direct ke akun kita
+- edit2
+- commmit aja
+- sudah klik pull new request
+- create pull request
+- menuggu allow or not from admin hehehe
+
+
+GIT REMOTE!!!!!
+- buka file yg sudah ada yg sudah di init bla bla bla
+- buka github
+
+== CASE ONE
+	kita punya repo di github dan di comp kita belum, kita bisa cloning terlebih dahulu
+	- untuk contoh, buat repo
+	- klik clone, gunakan http
+	- copy address nya
+	- bka desktop misalnya, terserah
+	- klik kanan buka gitnya di erminal
+	- git clone alamatRepoKIta
+	- cd namaRepo yg di clone
+	- git remote = nanti ada origin (nama 	default)
+	- git remote -v = detil = bisa feth and push
+	- git status, up to date dengan origin master
+	- graph
+	- warna merah ada di remote kita / origin
+	- kita ubah misalnya di local
+	- edit file atau tmbah2 file
+	- git status
+	- git add .
+	- git commit -m "tambah file"
+	- git status
+	- nanti ada pesan . di komputer kita mendahului commit yg ada di remote
+	- graph
+	- nanti ada satu dibawah yg belum kita commit juga
+	- kirim perubahannya = git push
+	- oke
+	login kalau diminta
+
+	- git status OK
+	- graph 
+	-sama origin dengan local
+	- melihat contrb
+	- git config --list
+	UNTUK MASUK
+	- git config --local (hanya berlaku di repo kita saat ini) kalau semua --global aja
+	- git config --global user.name "adadeh"
+	- git config --global user.email "adadeh.com"
+	- coba edit lagi
+	- git add .
+	- git commit -am "whatever"
+	- git push
+	- git status OK
+
+CASE 2 = PUNYA DI LOCAL DAN SIMPAN KE GITHUB
+	- mkdir blabla
+	- cd blabla
+	- git init
+	- buak diamana aja, usblime,visual
+	- buat file baru dll lah
+	- git add .
+	- git commit -m "blabla"
+	- graph
+	- save ke github
+	- harus bikin repo dulu di gituhb
+	- jangan centang readme ya,
+	- ikuti perintahyg nomor 2
+	- yg dua baris itu lho
+	- back to term
+	- copy satu baris pertama
+	- tempel di terminal lalu enter
+	- nama origin bisa diubah
+	- untuk push = git push -u origin master
+	- login kaalu diminta
+	- git status
+	- back github refresh
+	- misal mkita edit, commit,-am ya
+	- git push
+	OK
+
+- CASE 3 DI LOCAL ADA DI GITBHUB ADA JUGA
+	- misa di local edit baris 3
+	- di github diedit juga musal oleh teman kita baris yg sama
+	- git add .
+	- git commit -m "blabla"
+	- git push
+	- oh conflict hahahahahahahahah
+	- git status
+	- git fetch = untuk cek di github udh samape mana commitnya
+	- git push = diverged = cabang beda
+	- graph, nanti ada di local kita edit di github juga ada yg edit
+	-  kita pull
+	- git pull
+	- otomatis nanti masuk ke editor kita,, resolve seperti biasa
+	-  git add .
+	- git commit -m "sdaasdasa"
+	- git push
+	- graph
+
+OKE
+
+
+
+
+GITHUB PAGES
+= untuk upload web statis kita, html css and js.
+
+- buat repo di github
+- namanya gak boleh ngasal = namaGithubKita.github.io.
+- buat deksripsi
