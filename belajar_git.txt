@@ -427,6 +427,29 @@ MULTIPLE REMOTE
 - git push -u origin master
 -OKE
 =============================================
+=============================================
+GITIGNORE = file, folder,dll yg didaftarkan di gitignore maka tidak akan di add ketika add .
+
+- buat repo di github
+- kita buat init di local, buat file2
+- buat misal, config.txt, folder data, apa.exe, anu.exe
+- misal ketika add . , kita gk mau masukin config.txt . nah kita buat file dengan nama = .gitignore
+- didalamnya daftarkan dbawah ini untuk di abaikan natinya:
+	config.txt
+	data/
+	*.exe
+
+- git add, git commit, git status
+- git push
+
+- buka github gitignore
+- disana ada advice yg mana aja reccoment untuk di include di  gitignore
+- other = gitignore.io
+- lengkap disini, generate
+- klik create nanti dibuakan ignorenya
+- copy terus save di gitignore kita
+
+
 
 
 
