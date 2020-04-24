@@ -51,7 +51,7 @@ tambah penghubung javascript dan buat file script.js yang isina console.log ok
 
 
 
-VIDEO KEDUA (BRANCH)
+ (BRANCH)
 - buat folder repo 2 , lalu git init
 - buat mahasiswa.html . editlah
 - git status , git add. , git commit "menambahkan file sekolah
@@ -371,7 +371,7 @@ OKE
 
 
 
-================= GITHUB PAGES
+============================================= GITHUB PAGES
 = untuk upload web statis kita, html css and js.
 
 - buat repo di github
@@ -388,11 +388,17 @@ OKE
 - git push
 - git status
 - akses di browser kita
-================ membuat pages untuk repo 
+======================================== membuat pages untuk repo 
 - siapkan web statis yg sudah dibikin sebelumnya
 - goto github and create one repository, terserah nama repo nya hahaha
 - copy remote nya dan copy juga git push -u origin blalbalbal OK seperti biasa
-- 
+- klik setting di menu repo di github
+- scroll kebawah dan cari github pages
+- klik master branch, klau hanya punya master branch. loading and
+- nanti akan ada url nya di bagian github pages nya
+- klik url untuk check
+- bisa juga pake theme yg sudah disediakan dan akan tampil 3 option likes view,download zip and tar.gz
+========================================
 
 
 
@@ -434,7 +440,8 @@ OKE
 
 
 
-TRIK : 
+
+==================================== TRIK 
 menghaspus history commit:
 	- git clone https://github.com/username/project.git
 	- cd project
@@ -445,3 +452,4 @@ menghaspus history commit:
 	- git add .
 	- git commit -am "initial commit"	
 	- git push -f origin master
+======================================
