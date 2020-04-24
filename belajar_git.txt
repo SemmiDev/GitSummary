@@ -371,7 +371,7 @@ OKE
 
 
 
-GITHUB PAGES
+================= GITHUB PAGES
 = untuk upload web statis kita, html css and js.
 
 - buat repo di github
@@ -388,7 +388,11 @@ GITHUB PAGES
 - git push
 - git status
 - akses di browser kita
-
+================ membuat pages untuk repo 
+- siapkan web statis yg sudah dibikin sebelumnya
+- goto github and create one repository, terserah nama repo nya hahaha
+- copy remote nya dan copy juga git push -u origin blalbalbal OK seperti biasa
+- 
 
 
 
