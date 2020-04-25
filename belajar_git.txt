@@ -546,3 +546,16 @@ contoh = git diff cf08ca0837cf26f1c595be36bb3a6b815e311be1 06f735af7724558164c87
 
 == Perbandingan Antar Cabang (Branch)
 command = git diff <nama cabang> <nama cabang>
+
+
+
+== Membatalkan Perubahan File yang Sudah dalam Kondisi staged
+misal kita sudah modified dan kita git add . ke stage area. nah untuk mengembalikan nya ke modifier lagi gunakan perintah = git reset namaFileKalauSpsifik
+coba cek status nya,maka perubahan file telah dibatalkan = git status
+
+== Kembali ke 3 Commit sebelumnya
+command = git checkout HEAD-3 namFileNya
+
+== Batalkan semua perubahan yg ada
+command = gir revert -n nomorCOmmit
+
