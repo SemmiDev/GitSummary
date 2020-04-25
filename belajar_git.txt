@@ -501,8 +501,12 @@ menghaspus history commit:
 ======================================
 
 ======================================
-Perbedaan git pull dan git fetch
+== Perbedaan git pull dan git fetch
 
 - git pull = amil commit terbaru lalu		otomatis menggabungkan dengan branch yg aktif
 -git fetch = mengambil commit saja. Perintah git fetch tidak akan langsung melakukan merge.
 
+== Waktu yang Tepat Menggunakan git pull dan git fetch?
+
+- Apabila kita sudah melakukan commit di repository lokal, maka yang kita gunakan adalah git fetch., mencegah terjadinya bentrok
+- Sedangkan apabila kita tidak pernah melakukan apa-apa di lokal repository, kita bisa menggunakan git pull.
