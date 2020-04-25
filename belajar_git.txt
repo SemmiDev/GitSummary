@@ -559,3 +559,40 @@ command = git checkout HEAD-3 namFileNya
 == Batalkan semua perubahan yg ada
 command = gir revert -n nomorCOmmit
 
+
+
+
+
+
+
+
+
+
+
+== GIT CHECKOUT
+Misalnya kita ingin membuat cabang baru berdasarkan kondisi kode di masa lalu, maka kita bisa menggunakan perintah: git checkout -b nama_cabang <nomer_commit>
+
+Maka nanti cabang baru akan terbentuk dari commit sebelumnya.
+
+== GIT RESET
+Perintah git reset sering disebut sebagai perintah berbahaya yang dapat menghancurkan catatan sejarah perubahan.
+
+Hati-hati! Perintah ini membuat kita tidak bisa kembali lagi ke masa depan. Mau tidak mau, kita harus menulis ulang sejarah.
+
+Dampak git reset
+
+Perintah ini memiliki tiga argumen atau opsi utama, yaitu --soft, --mixed, dan --hard.
+
+--soft akan mengebalikan dengan kondisi file dalam keadaan staged
+--mixed akan mengebalikan dengan kondisi file dalam keadaan modified
+--hard akan mengebalikan dengan kondisi file dalam keadaan commited
+
+== Git Revert
+Revert artinya mengembalikan. Perintah ini lebih aman daripada git reset, karena tidak akan menghapus catatan sejarah revisi.
+
+Revert akan akan mengambil kondisi file yang ada di masa lalu, kemudian menggabungkannya dengan commit terakhir.
+
+Kesimpulan : 
+Perintah git checkout mengembalikan file dalam kondisi sebelumnya, tapi bersifat sementara.
+Perintah git reset, akan mengembalikan file ke kondisi sebelumnya, kemudian menghapus catatan sejarah commit beikutnya.
+Perintah git revert mengembalikan file dengan tidak menghapus sejarah commit.
