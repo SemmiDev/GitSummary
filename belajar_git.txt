@@ -596,3 +596,19 @@ Kesimpulan :
 Perintah git checkout mengembalikan file dalam kondisi sebelumnya, tapi bersifat sementara.
 Perintah git reset, akan mengembalikan file ke kondisi sebelumnya, kemudian menghapus catatan sejarah commit beikutnya.
 Perintah git revert mengembalikan file dengan tidak menghapus sejarah commit.
+
+
+
+== CARA UBAH NAMA REMOTE
+git remote rename github kantor
+Keterangan:
+
+github adalah nama lama
+kantor adalah nama baru
+
+Hapus remote:
+git remote remove github
+
+keterangan:
+
+github adalah nama remote yang akan dihapus.
