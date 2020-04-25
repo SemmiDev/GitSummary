@@ -526,3 +526,11 @@ log yg lebih pendek = git log --oneline
 log pada file tertentu = git log namaFile
 melihat apa saja yg dikerjakan oleh salahsatu author = git log --author = "namaAuthor"
 =============================================
+
+
+
+=============================================
+git diff = digunakan untukmelihat perubahan yang dilakukan pada revisi tertentu.
+penggunaan = git diff kodeRevisi
+nb = tanda + = kode yg ditambahkan
+	tanda - = kode yg dihapus
