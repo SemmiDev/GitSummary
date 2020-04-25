@@ -534,3 +534,15 @@ git diff = digunakan untukmelihat perubahan yang dilakukan pada revisi tertentu.
 penggunaan = git diff kodeRevisi
 nb = tanda + = kode yg ditambahkan
 	tanda - = kode yg dihapus
+
+== Melihat Perbandingan pada File
+Apa bila kita melakukan banyak perubahan, maka akan banyak sekali tampil output. Karena itu, kita mungkin hanya perlu melihat perubahan untuk file tertentu saja. Untuk melihat perbandingan perubahan pada file tertentu,
+
+command : git diff namaFileNya
+
+== Melihat Perbandingan antar Revisi/Commit
+command = git diff <nomer commit> <nomer commit>
+contoh = git diff cf08ca0837cf26f1c595be36bb3a6b815e311be1 06f735af7724558164c87f6b1ce3ca7778eb1c1b
+
+== Perbandingan Antar Cabang (Branch)
+command = git diff <nama cabang> <nama cabang>
