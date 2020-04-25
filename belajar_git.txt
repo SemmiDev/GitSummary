@@ -510,3 +510,19 @@ menghaspus history commit:
 
 - Apabila kita sudah melakukan commit di repository lokal, maka yang kita gunakan adalah git fetch., mencegah terjadinya bentrok
 - Sedangkan apabila kita tidak pernah melakukan apa-apa di lokal repository, kita bisa menggunakan git pull.
+
+Jadi, Kesimpulannya
+Gunakan perintah git pull saat tidak ada commit yang pernah dilakukan di lokal. Sedangkan perintah git fetch digunakan kalau sudah ada commit yang dilakukan.
+
+Penggunaan git fetch lebih aman, karena kita akan melakukan merge branch secara manual. Sehingga kita bisa terhindar dari bentrokan.
+
+Perintah git pull biasanya digunakan untuk sync repo lokal dengan remote.
+
+Jika kamu menggunakan vs Code, pada pojok kanan bawah ada ikon untuk sync repo. Ini juga mungkin saja menggunakan git pull.
+
+
+=============================================
+log yg lebih pendek = git log --oneline
+log pada file tertentu = git log namaFile
+melihat apa saja yg dikerjakan oleh salahsatu author = git log --author = "namaAuthor"
+=============================================
